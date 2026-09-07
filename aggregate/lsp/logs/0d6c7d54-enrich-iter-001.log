@@ -1,0 +1,23 @@
+[2026-09-07T14:25:58Z] === ENRICH ITERATION 1 START | repo=hyperium/hyper sha=0d6c7d54 ===
+[2026-09-07T14:25:58Z] [iter=1] PHASE START: enrich repo=hyperium/hyper sha=0d6c7d54 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0d6c7d54-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0d6c7d5469baa09e2fb127ee3758a79b3271a4f0.nq.gz
+[2026-09-07T14:26:34Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-07T14:26:42Z] [iter=1] AST store loaded triples=1120213 load_secs=7 mem_mb=862 MB
+[2026-09-07T14:26:42Z] [iter=1] Step 2: Finding LSP targets mem_mb=862 MB
+[2026-09-07T14:26:44Z] [iter=1] LSP targets found call_sites=9551 imports=0 extends=0 implements=400 secs=3
+[2026-09-07T14:26:46Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=862 MB
+[2026-09-07T14:26:53Z] [iter=1] Position index built positions=74946 nodes_with_types=91561 secs=6 mem_mb=862 MB
+[2026-09-07T14:26:53Z] [iter=1] Step 3: Starting LSP resolution mem_mb=862 MB already_completed_types=[] already_completed_files=0
+[2026-09-07T14:26:53Z] [iter=1] Resolving target type target_type=call_site count=9551
+[2026-09-07T14:27:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.2 files_done=0 resolved=0 errors=0 current=src/proto/h1/encode.rs
+[2026-09-07T14:30:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.0 files_done=2 resolved=1189 errors=472 current=src/ext/mod.rs
+[2026-09-07T14:32:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.2 files_done=6 resolved=2017 errors=626 current=tests/support/trailers.rs
+[2026-09-07T14:33:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.3 files_done=19 resolved=2204 errors=762 current=src/proto/h2/client.rs
+[2026-09-07T14:33:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.8 files_done=30 resolved=2602 errors=828 current=src/client/conn/http2.rs
+[2026-09-07T14:34:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.3 files_done=57 resolved=2925 errors=892 current=src/proto/h1/mod.rs
+[2026-09-07T14:34:56Z] [iter=1] Target type resolved target_type=call_site resolved=3091 errors=970 secs=483 mem_mb=862 MB
+[2026-09-07T14:34:56Z] [iter=1] Resolving target type target_type=implements_clause count=400
+[2026-09-07T14:34:57Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=9.0 files_done=0 resolved=0 errors=0 current=src/proto/h2/server.rs
+[2026-09-07T14:35:09Z] [iter=1] Target type resolved target_type=implements_clause resolved=91 errors=0 secs=14 mem_mb=862 MB
+[2026-09-07T14:35:25Z] [iter=1] Step 5: Writing final enrichment file triples=49927
+[2026-09-07T14:35:26Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/0d6c7d5469baa09e2fb127ee3758a79b3271a4f0.nq.gz size_kb=966
+[2026-09-07T14:35:26Z] [iter=1] PHASE END: enrich elapsed_s=568 elapsed_min=9.5 total_triples=49927
