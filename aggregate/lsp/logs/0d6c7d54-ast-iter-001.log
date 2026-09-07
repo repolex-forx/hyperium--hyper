@@ -1,0 +1,7 @@
+[2026-09-07T14:07:21Z] === AST ITERATION 1 START | repo=hyperium/hyper sha=0d6c7d54 ===
+[2026-09-07T14:07:21Z] [iter=1] PHASE START: ast repo=hyperium/hyper sha=0d6c7d54
+[2026-09-07T14:07:21Z] [iter=1] Building AST aggregate chunks
+[2026-09-07T14:08:24Z] [iter=1] AST chunks built count=1 triples=1120213
+[2026-09-07T14:08:24Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/0d6c7d5469baa09e2fb127ee3758a79b3271a4f0/.complete
+[2026-09-07T14:08:24Z] [iter=1] PHASE END: ast elapsed_s=63 elapsed_min=1.1
+[2026-09-07T14:08:24Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
